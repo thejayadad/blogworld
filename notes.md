@@ -25,3 +25,13 @@ run app
 
 # LAYOUT 
 - add daisyui
+- setup folder organization
+- dashboard and landing
+- create aside and layout
+
+# LIGHT DARK TOGGLE
+ - update tailwindconfig
+ - update theme context add one
+ - wrap the app with the provider
+ - add the toggle button and add in the header
+ 

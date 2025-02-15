@@ -1,3 +1,4 @@
+import Aside from '@/components/sidebar/aside';
 import React from 'react'
 
 const layout = ({
@@ -6,8 +7,11 @@ const layout = ({
     children: React.ReactNode;
   }>) => {
   return (
-    <div>
-        {children}
+    <div className='h-full flex bg-background-light dark:bg-background-dark'>
+      <Aside />
+       <main className='flex-1 h-full overflow-y-auto'>
+       {children}
+       </main>
     </div>
   )
 }
