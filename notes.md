@@ -22,3 +22,6 @@ run app
 - test it out on the home page
 - create login/out components & bring in the session
 - check prisma studio
+
+# LAYOUT 
+- add daisyui
