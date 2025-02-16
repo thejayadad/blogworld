@@ -2,6 +2,7 @@ import { auth } from '@/auth';
 import HeadingText from '@/components/auth/heading-text';
 import ContentForm from '@/components/postform/content-form';
 import ImageUrlForm from '@/components/postform/imageurl-form';
+import PublishToggle from '@/components/postform/publish-form';
 import TitleForm from '@/components/postform/title-form';
 import Box from '@/components/ui/Box';
 import { prisma } from '@/lib/prisma';
@@ -38,6 +39,7 @@ const SinglePostPage = async ({params}:Props) => {
     const totalFields = requiredFields.length;
     const completedFields = requiredFields.filter(Boolean).length;
     const completedText = `(${completedFields} / ${totalFields})`
+    const allFieldsCompleted = completedFields === totalFields;
 
     const formattedDate = new Intl.DateTimeFormat('en-US', {
         year: 'numeric',
@@ -70,6 +72,11 @@ const SinglePostPage = async ({params}:Props) => {
             initialContent={post.content ?? ''}
             postId={post.id}
             />
+               {allFieldsCompleted && (
+              <div className="mt-4">
+                <PublishToggle initialPublished={post.published} postId={post.id} />
+              </div>
+            )}
 
         </div>
       </div>
