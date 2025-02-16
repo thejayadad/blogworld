@@ -41,6 +41,17 @@ run app
 - add the toggle and logic
 - make sure is responsize
 
+# HEADER
+ - setup the header component
+ - style it
+ - bring in the auth and theme toggle
+
+# WEBITE 
+- update the model
+- create route websiteId
+- setup the validation
+- add to the aside the websiteid
+
 
 # WEBISTE SELECT
 - 
