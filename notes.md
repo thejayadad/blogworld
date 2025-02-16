@@ -63,3 +63,13 @@ run app
 
 
 # BLOG POST ID PAGE CONTENT #6
+- npm i @blocknote/react @blocknote/core
+- to see on a page
+```
+
+
+   <div
+            className="prose prose-lg max-w-none"
+            dangerouslySetInnerHTML={{ __html: initialContent }}
+          />
+```

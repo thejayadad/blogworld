@@ -31,7 +31,7 @@ const TitleForm: React.FC<TitleFormProps> = ({ initialTitle, postId }) => {
 
   return (
     <div className="w-full shadow-sm">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center space-x-4">
         {!isEditing ? (
           <>
             <h2 className="text-xl font-semibold">{title}</h2>

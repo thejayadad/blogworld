@@ -1,5 +1,7 @@
 import { auth } from '@/auth';
 import HeadingText from '@/components/auth/heading-text';
+import ContentForm from '@/components/postform/content-form';
+import ImageUrlForm from '@/components/postform/imageurl-form';
 import TitleForm from '@/components/postform/title-form';
 import Box from '@/components/ui/Box';
 import { prisma } from '@/lib/prisma';
@@ -51,8 +53,9 @@ const SinglePostPage = async ({params}:Props) => {
             <span className='text-sm text-slate-700'>Required Fields {completedText}</span>
         </div>
         <div className='mt-6'>
-            <div className='h-[400px] bg-orange-300'>
-                SinglePostPage
+            <div className='h-[400px]'>
+            <ImageUrlForm initialImageUrl={post.imageUrl} postId={post.id} />
+
             </div>
             <div className="mt-4 flex items-center justify-between">
                 <TitleForm
@@ -63,7 +66,10 @@ const SinglePostPage = async ({params}:Props) => {
                 By {post.userEmail} on {formattedDate}
               </p>
             </div>
-            <div className="prose">{post.content} POST CONTENT HERE</div>
+            <ContentForm
+            initialContent={post.content ?? ''}
+            postId={post.id}
+            />
 
         </div>
       </div>
