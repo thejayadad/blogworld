@@ -49,3 +49,6 @@ run app
 # BLOG DESIGN UPDATE #2
 - component directory
 - update the 
+
+# BLOG CREATE POST #4
+- dashboard page
