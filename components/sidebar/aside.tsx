@@ -8,7 +8,7 @@ const Aside = () => {
 
   return (
     <aside
-      className={`h-full bg-text-light/10 dark:bg-text-light/30 overflow-hidden relative flex flex-col z-[1000] transition-all duration-300 ${
+      className={`h-full bg-text-light/5 dark:bg-text-light/30 overflow-hidden relative flex flex-col z-[1000] shadow-md transition-all duration-300 ${
         isOpen ? "w-60" : "w-14"
       }`}
     >

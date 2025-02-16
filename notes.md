@@ -34,4 +34,13 @@ run app
  - update theme context add one
  - wrap the app with the provider
  - add the toggle button and add in the header
- 
+
+ # ASIDE
+ - update the layout
+ - bring in the aside
+- add the toggle and logic
+- make sure is responsize
+
+
+# WEBISTE SELECT
+- 

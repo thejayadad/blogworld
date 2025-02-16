@@ -9,8 +9,7 @@ const DashboardPage = () => {
   <p className="text-secondary-light dark:text-secondary-dark">Welcome to your blogging site!</p>
 </div>
 
-      <ThemeToggle 
-      />
+  DashboardPage
     </div>
   )
 }

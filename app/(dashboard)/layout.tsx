@@ -1,3 +1,4 @@
+import Header from '@/components/header/header';
 import Aside from '@/components/sidebar/aside';
 import React from 'react'
 
@@ -10,6 +11,7 @@ const layout = ({
     <div className='h-full flex bg-background-light dark:bg-background-dark'>
       <Aside />
        <main className='flex-1 h-full overflow-y-auto'>
+        <Header />
        {children}
        </main>
     </div>
