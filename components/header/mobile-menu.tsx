@@ -27,7 +27,7 @@ const MobileMenu = async () => {
              className='p-2 flex rounded-full bg-purple-200 shadow-sm transition-all duration-300 hover:shadow-md'>
             <FiMenu className='text-gray-400' size={20}/>
         </label>
-        <div className='fixed top-0 left-0 h-screen w-64 border-r bg-neutral-50 text-gray-600 transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 shadow-lg'>
+        <div className='fixed top-0 left-0 h-screen w-64 border-r z-[10000000] bg-neutral-50 text-gray-600 transform -translate-x-full peer-checked:translate-x-0 transition-transform duration-300 shadow-lg'>
         <div className="p-4 flex justify-between items-center mt-3 border-b">
           <span className="text-lg font-semibold">
             <Logo />

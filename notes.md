@@ -73,3 +73,4 @@ run app
             dangerouslySetInnerHTML={{ __html: initialContent }}
           />
 ```
+# DISPLAY BLOG POST IN TABLE #7
