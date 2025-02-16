@@ -28,4 +28,24 @@ run app
 - 
 
 
+# Route grouping
+- route grouping
+- routes explanation
+
+- LAYOUT EXPLANATION
+
+- REUSABLE COMPONENT
+-- Box.tsx
+
+# HEADER
+- build out mobile
+- add checkbox toggle
+- explain the whys behind it
+- build the logo explain whats going on maybe
+- route links
+- explain the link items and pathname
+- add the logout button and why we choose the toggle
+
 # BLOG DESIGN UPDATE #2
+- component directory
+- update the 
