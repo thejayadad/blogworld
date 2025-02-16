@@ -54,4 +54,6 @@ run app
 
 
 # WEBISTE SELECT
-- 
+- update the layout and aside to get all the websites by the userEmail
+- add the website select component and pass the websites to it
+- add additional websites
