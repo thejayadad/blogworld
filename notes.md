@@ -52,3 +52,14 @@ run app
 
 # BLOG CREATE POST #4
 - dashboard page
+- add the navbar
+- setup the headingtitle
+- add the action
+- add the onclick with redirect
+
+# BLOG POST ID PAGE #5
+- setup trhe individal page
+- add in the params so its getting the 
+
+
+# BLOG POST ID PAGE CONTENT #6
