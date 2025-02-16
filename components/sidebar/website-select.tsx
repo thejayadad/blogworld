@@ -45,7 +45,7 @@ const WebsiteSelect: React.FC<WebsiteSelectProps> = ({ selectedWebsite, websites
 
       {/* Dropdown List (Only if User Has Multiple Websites) */}
       {isDropdownOpen && websites.length > 1 && (
-        <div className="absolute mt-2 w-full bg-white dark:bg-gray-900 shadow-sm rounded-md z-50">
+        <div className="absolute mt-2 w-full bg-white dark:bg-gray-900 dark:text-secondary-dark shadow-sm rounded-md z-50">
           {websites.map((site) => (
             <button
               key={site.id}

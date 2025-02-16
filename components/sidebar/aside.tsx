@@ -3,11 +3,12 @@
 import React, { useState } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import WebsiteSelect from "./website-select";
+import AsideLinks from "./aside-links";
 
 interface Website {
   id: string;
   name: string;
-  userEmail: string | null; // ✅ Ensure userEmail is passed
+  userEmail: string | null;
 }
 
 interface AsideProps {
@@ -37,11 +38,12 @@ const Aside: React.FC<AsideProps> = ({ website, userWebsites }) => {
       </button>
 
       {/* Sidebar Content */}
-      <div className="p-4 flex border-t flex-col mt-1 gap-4">
+      <div className="p-4 flex border-t dark:border-t-background-dark/90 flex-col mt-1 gap-4">
         {/* Pass isOpen and websites */}
         <WebsiteSelect selectedWebsite={website} websites={userWebsites} isOpen={isOpen} />
 
-        <p className={`transition-opacity duration-300 ${isOpen ? "opacity-100" : "opacity-0 hidden"}`}>Links</p>
+        {/* Pass isOpen & userEmail to AsideLinks */}
+        <AsideLinks isOpen={isOpen} userEmail={website?.userEmail ?? ""} />
       </div>
     </aside>
   );

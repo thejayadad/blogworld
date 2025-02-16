@@ -29,7 +29,6 @@ const layout = async ({
 
     return(
         <>
-            <div>NavBar</div>
         {children}
         </>
     )
